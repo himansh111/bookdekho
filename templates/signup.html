@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="form">
+    <form name ="send"id="signup"action="/signup/"method="POST">{%  csrf_token %}
+        {{ uform.as_p }}
+        {{ pform.as_p }}
+        <input type ="submit"value="signup">
+
+    </form>
+</div>
+
+
+</body>
+</html>
